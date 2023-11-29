@@ -114,6 +114,10 @@ Our solution to this is to set our Flutter-generated `.exe` executable as `keypa
 This makes the font files companion references to the executable (and is upgraded every time the executable is upgraded), and thus exempt from 
 the code page value requirement.
 
+### Shortcuts - ICE43 and ICE57 Warnings
+
+Honestly for this one... I just gave up and gave in, and set `Advertise="yes"` on the shortcut.
+
 ### Restricting Installer to 64-bit Windows 10/11 via VersionNT/VersionNT64
 
 This oddity with VersionNT64 tripped me up for way too long. Flutter officially supports only 64-bit Windows 10/11, and one might think that querying for the VersionNT64 property would allow one to set platform checks.
